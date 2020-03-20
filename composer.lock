@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0d2182af33c4d90c8414869a19e17b7",
+    "content-hash": "452ea68252aa3b65cb1c7d125dc676e2",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,11 +132,11 @@
         },
         {
             "name": "jmichaelward/jmw-2018-theme",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2018-theme.git",
-                "reference": "5ab6eb59888727160bdb925ca0697998ddf4f6af"
+                "reference": "3a2a91e3b50932df88782332602c8b89ecdbc6ab"
             },
             "type": "wordpress-theme",
             "license": [
@@ -149,7 +149,7 @@
                 }
             ],
             "description": "A 2018 theme for J. Michael Ward.",
-            "time": "2020-03-20T16:22:42+00:00"
+            "time": "2020-03-20T17:54:02+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",

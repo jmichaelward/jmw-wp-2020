@@ -3,7 +3,7 @@
         "composer/installers": "^1.8",
         "johnpbloch/wordpress-core-installer": "^1.0",
         "johnpbloch/wordpress-core": "^5.3",
-        "jmichaelward/jmw-2018-theme": "^0.2.0"
+        "jmichaelward/jmw-2018-theme": "^0.3"
     },
     "require-dev": {
         "johnbillion/query-monitor": "^3.5"
@@ -32,9 +32,7 @@
         }
     },
     "scripts": {
-        "post-install-command": [
-            "cd ./public/wp-content/themes/jmw-2018-theme",
-            "yarn install && yarn encore dev"
-        ]
+        "build-theme": "cd public/wp-content/themes/jmw-2018-theme && yarn install && yarn encore dev",
+        "post-install-cmd": "@build-theme"
     }
 }

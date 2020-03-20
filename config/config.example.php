@@ -1,6 +1,17 @@
 <?php
-if ( is_readable( __DIR__ . '/local-config.php' ) ) {
-    require_once __DIR__ . '/local-config.php';
+// Setup autoloader and other configuration values.
+$loadables = array_filter(
+    [
+        dirname( __FILE__, 2 ) . '/public/vendor/autoload.php',
+        __DIR__ . '/local-config.php',
+    ],
+    function( $file_path ) {
+        return is_readable( $file_path );
+    }
+);
+
+foreach ( $loadables as $loadable ) {
+    require_once $loadable;
 }
 
 // ** MySQL settings - You can get this info from your web host ** //

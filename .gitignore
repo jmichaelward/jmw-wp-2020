@@ -1,0 +1,9 @@
+# Ignore most everything in the public directory.
+# Most packages will be installed via Composer, but there may be a case for versioning a particular
+# one-off package with this project.
+/public/vendor/
+/public/wp/
+/public/wp-content/
+
+# Ignore our config values.
+/config/config.php

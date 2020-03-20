@@ -1,0 +1,29 @@
+{
+    "require": {
+        "composer/installers": "^1.8",
+        "johnpbloch/wordpress-core-installer": "^1.0",
+        "johnpbloch/wordpress-core": "^5.3"
+    },
+    "require-dev": {
+        "johnbillion/query-monitor": "^3.5"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "config": {
+        "vendor-dir": "public/vendor/"
+    },
+    "extra": {
+        "wordpress-install-dir": {
+            "johnpbloch/wordpress-core": "public/wp/"
+        },
+        "installer-paths": {
+            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"]
+        }
+    }
+}

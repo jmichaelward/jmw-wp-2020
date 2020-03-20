@@ -2,17 +2,22 @@
     "require": {
         "composer/installers": "^1.8",
         "johnpbloch/wordpress-core-installer": "^1.0",
-        "johnpbloch/wordpress-core": "^5.3"
+        "johnpbloch/wordpress-core": "^5.3",
+        "jmichaelward/jmw-2018-theme": "^0.2.0"
     },
     "require-dev": {
         "johnbillion/query-monitor": "^3.5"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "wpackagist": {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        "jmw-2018-theme": {
+            "type": "git",
+            "url": "https://github.com/jmichaelward/jmw-2018-theme.git"
         }
-    ],
+    },
     "config": {
         "vendor-dir": "public/vendor/"
     },

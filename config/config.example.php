@@ -1,4 +1,7 @@
 <?php
+if ( is_readable( __DIR__ . '/local-config.php' ) ) {
+    require_once __DIR__ . '/local-config.php';
+}
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -48,33 +51,18 @@ define('NONCE_SALT', 'put your unique phrase here');
 $table_prefix = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the Codex.
- *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
- */
-define('WP_DEBUG', false);
-
-/**
  * Site-specific customizations.
  */
-
-// Define the ABSPATH for the WordPress installation.
-if ( ! defined( 'ABSPATH' ) ) {
-    define( 'ABSPATH', dirname( __FILE__, 2 ) . '/public/' );
-}
+$url = $_SERVER['SERVER_NAME'] ?? $_SERVER['HTTP_HOST'];
 
 // Define the home and site URLs.
-define( 'HOME_URL', 'https://' . $_SERVER['SERVER_NAME'] );
-define( 'WP_SITEURL', 'https://' . $_SERVER['SERVER_NAME'] . '/public/wp/' );
+$protocol = ( isset( $_SERVER['HTTPS'] ) && ! empty( $_SERVER['HTTPS'] ) ) ? 'https' : 'http';
+define( 'HOME_URL', "{$protocol}://{$url}" );
+define( 'WP_SITEURL', "{$protocol}://{$url}/wp/" );
 
 // Set the location of the wp-content directory.
-if ( ! defined( 'WP_CONTENT_DIR' ) ) {
-    define( 'WP_CONTENT_DIR', dirname( __FILE__, 2 ) . '/public/wp-content' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__, 2 ) . '/public/wp-content' );
+
+if ( ! defined( 'WP_CONTENT_URL' ) ) {
+    define( 'WP_CONTENT_URL', "{$protocol}://{$url}/wp-content" );
 }

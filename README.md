@@ -5,3 +5,12 @@ Though I've integrated Composer usage into my professional years ago, I've faile
 to my own site.
 
 This repository attempts to correct that omission.
+
+## Development Dependencies
+The following dependencies must be installed on your machine prior to running the installation and setup steps below:
+- Composer
+- Yarn
+
+## Installation & Setup
+1. Clone this repo: `git clone https://github.com/jmichaelward/jmw-wp-2020.git`
+2. `cd jmw-wp-2020 && composer install`

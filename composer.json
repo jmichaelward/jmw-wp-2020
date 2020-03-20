@@ -30,5 +30,11 @@
             "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"]
         }
+    },
+    "scripts": {
+        "post-install-command": [
+            "cd ./public/wp-content/themes/jmw-2018-theme",
+            "yarn install && yarn encore dev"
+        ]
     }
 }

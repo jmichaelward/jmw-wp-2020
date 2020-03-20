@@ -132,11 +132,11 @@
         },
         {
             "name": "jmichaelward/jmw-2018-theme",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2018-theme.git",
-                "reference": "cbfdc63d145779f0e34444e95cc9b09e26d72389"
+                "reference": "5ab6eb59888727160bdb925ca0697998ddf4f6af"
             },
             "type": "wordpress-theme",
             "license": [
@@ -149,7 +149,7 @@
                 }
             ],
             "description": "A 2018 theme for J. Michael Ward.",
-            "time": "2018-12-23T18:30:56+00:00"
+            "time": "2020-03-20T16:22:42+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",

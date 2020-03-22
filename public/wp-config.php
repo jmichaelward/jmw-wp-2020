@@ -24,9 +24,7 @@
 $config = dirname( __FILE__, 2 ) . '/config/config.php';
 
 if ( ! is_readable( $config ) ) {
-	echo '<h1>Nothing to see here, folks.</h1>';
-
-	return;
+	die( '<p>Your installation is missing its configuration. Please double-check your file system.</p>' );
 }
 
 require_once $config;

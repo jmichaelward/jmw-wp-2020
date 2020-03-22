@@ -21,11 +21,11 @@
             "type": "composer",
             "url": "https://wpackagist.org"
         },
-        "jmw-2018-theme": {
+        "jmichaelward/jmw-2018-theme": {
             "type": "git",
             "url": "https://github.com/jmichaelward/jmw-2018-theme.git"
         },
-        "jmw-2020-theme": {
+        "jmichaelward/jmw-2020-theme": {
             "type": "git",
             "url": "https://github.com/jmichaelward/jmw-2020-theme.git"
         }

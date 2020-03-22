@@ -3,6 +3,7 @@
     "description": "A 2020 iteration of my personal site's WordPress install.",
     "license": "GPL-2.0-or-later",
     "require": {
+        "php": "^7.4",
         "composer/installers": "^1.8",
         "johnpbloch/wordpress-core-installer": "^1.0",
         "johnpbloch/wordpress-core": "^5.3",

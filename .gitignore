@@ -8,3 +8,6 @@
 # Ignore our config values.
 /config/config.php
 /config/local-config.php
+
+# Ignore specific files.
+.env

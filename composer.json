@@ -9,7 +9,9 @@
         "jmichaelward/jmw-2018-theme": "^0.3"
     },
     "require-dev": {
-        "johnbillion/query-monitor": "^3.5"
+        "johnbillion/query-monitor": "^3.5",
+        "jmichaelward/wpcs-modified": "^0.1.0",
+        "wp-cli/wp-cli-bundle": "^2.4"
     },
     "repositories": {
         "wpackagist": {

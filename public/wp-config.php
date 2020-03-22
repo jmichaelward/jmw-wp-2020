@@ -13,7 +13,7 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link    https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
@@ -24,8 +24,9 @@
 $config = dirname( __FILE__, 2 ) . '/config/config.php';
 
 if ( ! is_readable( $config ) ) {
-    echo '<h1>Nothing to see here, folks.';
-    return;
+	echo '<h1>Nothing to see here, folks.</h1>';
+
+	return;
 }
 
 require_once $config;
@@ -38,4 +39,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';

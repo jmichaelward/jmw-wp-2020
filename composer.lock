@@ -157,7 +157,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2020-theme.git",
-                "reference": "45563625763d7b309d11463d93101e8fbc9781ec"
+                "reference": "d2b7443e4be08fd708b7bdf55363cb2e63f525d8"
             },
             "require": {
                 "webdevstudios/oops-wp": "^0.3.0"
@@ -166,7 +166,10 @@
             "autoload": {
                 "psr-4": {
                     "JMichaelWard\\Theme2020\\": "src/"
-                }
+                },
+                "files": [
+                    "src/includes/template-tags.php"
+                ]
             },
             "license": [
                 "GPL-2.0-or-later"
@@ -179,7 +182,7 @@
                 }
             ],
             "description": "A WordPress theme for jmichaelward.com.",
-            "time": "2020-03-22T02:19:18+00:00"
+            "time": "2020-03-22T17:46:34+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",

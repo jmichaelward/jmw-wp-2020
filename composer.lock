@@ -157,7 +157,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2020-theme.git",
-                "reference": "d2b7443e4be08fd708b7bdf55363cb2e63f525d8"
+                "reference": "376be5c3ca9184a27fa68e1e3364d850d563d6ac"
             },
             "require": {
                 "webdevstudios/oops-wp": "^0.3.0"
@@ -182,7 +182,7 @@
                 }
             ],
             "description": "A WordPress theme for jmichaelward.com.",
-            "time": "2020-03-22T17:46:34+00:00"
+            "time": "2020-03-22T18:18:50+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",

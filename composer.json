@@ -44,7 +44,7 @@
         }
     },
     "scripts": {
-        "build-theme": "cd public/wp-content/themes/jmw-2018-theme && yarn install && yarn encore dev",
+        "build-theme": "cd public/wp-content/themes/jmw-2020-theme && yarn install && yarn run build",
         "post-install-cmd": "@build-theme"
     }
 }

@@ -10,7 +10,8 @@
         "jmichaelward/jmw-2018-theme": "^0.3",
         "jmichaelward/jmw-2020-theme": "dev-master",
         "symfony/dotenv": "^5.0",
-        "jmichaelward/jmw-site-plugin": "dev-master@dev"
+        "jmichaelward/jmw-site-plugin": "dev-master@dev",
+        "symfony/process": "^5.0"
     },
     "require-dev": {
         "johnbillion/query-monitor": "^3.5",
@@ -49,7 +50,6 @@
         }
     },
     "scripts": {
-        "build-theme": "cd public/wp-content/themes/jmw-2020-theme && yarn install && yarn run build",
-        "post-install-cmd": "@build-theme"
+        "post-install-cmd": "php ./bin/install.php"
     }
 }

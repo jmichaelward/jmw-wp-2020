@@ -50,6 +50,9 @@
         }
     },
     "scripts": {
+        "reset": [
+            "rm -rf ./public/vendor ./public/wp ./public/wp-content"
+        ],
         "post-install-cmd": "php ./bin/install.php"
     }
 }

@@ -11,3 +11,4 @@
 
 # Ignore specific files.
 .env
+debug.log

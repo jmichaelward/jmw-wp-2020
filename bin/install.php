@@ -58,7 +58,7 @@ $theme_dir = "{$root}/public/wp-content/themes/{$theme}";
  */
 $processes = [
 	'install_yarn'   => [
-		[ 'yarn', 'install ' ],
+		[ 'yarn', 'install' ],
 		$theme_dir,
 	],
 	'build_theme'    => [

@@ -1,4 +1,6 @@
 <?php
+use Symfony\Component\Dotenv\Dotenv;
+
 // Setup autoloader and other configuration values.
 $loadables = array_filter(
 	[

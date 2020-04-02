@@ -29,9 +29,16 @@ require_once "{$root}/public/vendor/autoload.php";
  * Copy the example environment file into config if it's not set up to get
  * some initial values.
  */
-if ( ! is_readable( "{$root}/config/.env" ) ) {
-	$process = new Process( [ 'cp', '.env.example', '.env' ], "{$root}/config" );
-	$process->run();
+$configs = [
+	'.env.example'       => '.env',
+	'config.example.php' => 'config.php',
+];
+
+foreach ( $configs as $example => $config ) {
+	if ( ! is_readable( "{$root}/config/{$config}" ) ) {
+		$process = new Process( [ 'cp', $example, $config ], "{$root}/config" );
+		$process->run();
+	}
 }
 
 /*

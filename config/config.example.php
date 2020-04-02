@@ -74,10 +74,18 @@ $table_prefix = 'wp_';
 /**
  * Site-specific customizations.
  */
-$url = $_SERVER['SERVER_NAME'] ?? $_SERVER['HTTP_HOST'] ?? getenv( 'SERVER_HOST' );
 
 // Define the home and site URLs.
-$protocol = ( isset( $_SERVER['HTTPS'] ) && ! empty( $_SERVER['HTTPS'] ) ) ? 'https' : 'http';
+$url = filter_var(
+	$_SERVER['SERVER_NAME'] ?? $_SERVER['HTTP_HOST'] ?? $_ENV['SITE_HOST'] ?? '', // @codingStandardsIgnoreLine
+	FILTER_SANITIZE_STRING
+);
+
+$protocol = $_ENV['SITE_PROTOCOL'] ??
+			( isset( $_SERVER['HTTPS'] ) && ! empty( $_SERVER['HTTPS'] ) ) ?
+				'https' :
+				'http';
+
 define( 'HOME_URL', "{$protocol}://{$url}" );
 define( 'WP_SITEURL', "{$protocol}://{$url}/wp/" );
 

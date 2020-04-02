@@ -12,24 +12,47 @@ $root = dirname( __FILE__, 2 );
 
 require_once "{$root}/public/vendor/autoload.php";
 
-$dotenv = new Dotenv();
-$dotenv->load( "{$root}/config/.env" );
+if ( ! is_readable( "{$root}/config/.env" ) ) {
+	$process = new Process( [ 'cp', '.env.example', '.env' ], "{$root}/config" );
+	$process->run();
+}
 
+try {
+	$dotenv = new Dotenv();
+	$dotenv->load( "{$root}/config/.env" );
+} catch ( Throwable $e ) {
+	echo "No .env file found in configuration. Could not complete installation.\n";
+	exit( 1 );
+}
 $theme     = $_ENV['CURRENT_THEME'];
 $theme_dir = "{$root}/public/wp-content/themes/{$theme}";
 
-$process = new Process( [ 'yarn', 'install' ], $theme_dir );
-$process->run();
+$processes = [
+	'install_yarn'   => [
+		[ 'yarn', 'install ' ],
+		$theme_dir,
+	],
+	'build_theme'    => [
+		[ 'yarn', 'run', 'build' ],
+		$theme_dir,
+	],
+	'activate_theme' => [
+		[ 'wp', 'theme', 'activate', $theme ],
+		'./public/vendor/bin',
+	],
+];
 
-$process = new Process( [ 'yarn', 'run', 'build' ], $theme_dir );
-$process->run();
+foreach ( $processes as $name => $params ) {
+	if ( 'install_yarn' === $name && is_dir( $theme_dir . '/node_modules' ) ) {
+		continue;
+	}
 
-$process = new Process( [ 'wp', 'theme', 'activate', $theme ], './public/vendor/bin' );
-$process->run();
+	$process = new Process( $params[0], $params[1] );
+	$process->run();
 
+	if ( ! $process->isSuccessful() ) {
+		throw new ProcessFailedException( $process );
+	}
 
-if ( ! $process->isSuccessful() ) {
-	throw new ProcessFailedException( $process );
+	echo $process->getOutput(); // @codingStandardsIgnoreLine
 }
-
-echo $process->getOutput();

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc9909de4fc36ee2537ebd348beeb7a7",
+    "content-hash": "f6bb34b9ee1695c3c6f2b4cc0584ee19",
     "packages": [
         {
             "name": "composer/installers",
@@ -183,6 +183,29 @@
             ],
             "description": "A WordPress theme for jmichaelward.com.",
             "time": "2020-03-22T18:18:50+00:00"
+        },
+        {
+            "name": "jmichaelward/jmw-site-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmichaelward/jmw-site-plugin.git",
+                "reference": "b1f6f17d0d33c41bbf54c6a9dd76d0eeadb1f8f0"
+            },
+            "require": {
+                "webdevstudios/oops-wp": "^0.3.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "JMichaelWard\\JMWPlugin\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Custom site plugin for jmichaelward.com",
+            "time": "2020-04-02T14:44:15+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -3870,7 +3893,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "jmichaelward/jmw-2020-theme": 20
+        "jmichaelward/jmw-2020-theme": 20,
+        "jmichaelward/jmw-site-plugin": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

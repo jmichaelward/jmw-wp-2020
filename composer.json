@@ -9,7 +9,8 @@
         "johnpbloch/wordpress-core": "^5.3",
         "jmichaelward/jmw-2018-theme": "^0.3",
         "jmichaelward/jmw-2020-theme": "dev-master",
-        "symfony/dotenv": "^5.0"
+        "symfony/dotenv": "^5.0",
+        "jmichaelward/jmw-site-plugin": "dev-master@dev"
     },
     "require-dev": {
         "johnbillion/query-monitor": "^3.5",
@@ -28,6 +29,10 @@
         "jmichaelward/jmw-2020-theme": {
             "type": "git",
             "url": "https://github.com/jmichaelward/jmw-2020-theme.git"
+        },
+        "jmichaelward/jmw-site-plugin": {
+            "type": "git",
+            "url": "https://github.com/jmichaelward/jmw-site-plugin.git"
         }
     },
     "config": {

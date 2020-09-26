@@ -157,10 +157,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2020-theme.git",
-                "reference": "376be5c3ca9184a27fa68e1e3364d850d563d6ac"
+                "reference": "a16bafed9e3936a42375f2076cfcf83b4450bdbf"
             },
             "require": {
-                "webdevstudios/oops-wp": "^0.3.0"
+                "jmichaelward/oops-wp-plus": "^0.1.1"
             },
             "type": "wordpress-theme",
             "autoload": {
@@ -182,7 +182,7 @@
                 }
             ],
             "description": "A WordPress theme for jmichaelward.com.",
-            "time": "2020-03-22T18:18:50+00:00"
+            "time": "2020-05-03T00:55:42+00:00"
         },
         {
             "name": "jmichaelward/jmw-site-plugin",
@@ -208,24 +208,62 @@
             "time": "2020-04-02T14:44:15+00:00"
         },
         {
-            "name": "johnpbloch/wordpress-core",
-            "version": "5.4.0",
+            "name": "jmichaelward/oops-wp-plus",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37"
+                "url": "https://github.com/jmichaelward/oops-wp-plus.git",
+                "reference": "f94307864660f46964c82bdffb7b5e90a3150df8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a9941fcad81015507e6d03801aebc51296baf37",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37",
+                "url": "https://api.github.com/repos/jmichaelward/oops-wp-plus/zipball/f94307864660f46964c82bdffb7b5e90a3150df8",
+                "reference": "f94307864660f46964c82bdffb7b5e90a3150df8",
                 "shasum": ""
             },
             "require": {
+                "webdevstudios/oops-wp": "^0.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JMichaelWard\\OopsWPPlus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Ward",
+                    "email": "jeremy@jmichaelward.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A custom extension of the OOPS-WP library.",
+            "time": "2020-03-30T16:21:34+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "5.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fa5bcb1579eae33baef6c04355f8d6657e5bd349",
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.4.0"
+                "wordpress/core-implementation": "5.5.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -245,7 +283,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-03-31T20:17:13+00:00"
+            "time": "2020-09-01T19:07:35+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -350,6 +388,20 @@
                 "dotenv",
                 "env",
                 "environment"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-02-29T10:07:09+00:00"
         },
@@ -589,6 +641,16 @@
                 "dependency",
                 "package"
             ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-13T19:34:27+00:00"
         },
         {
@@ -753,6 +815,12 @@
             "keywords": [
                 "Xdebug",
                 "performance"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                }
             ],
             "time": "2020-03-01T12:26:26+00:00"
         },
@@ -1000,6 +1068,7 @@
             ],
             "description": "The Developer Tools panel for WordPress.",
             "homepage": "https://github.com/johnbillion/query-monitor/",
+            "abandoned": "wpackagist-plugin/query-monitor",
             "time": "2019-12-02T22:46:18+00:00"
         },
         {
@@ -1563,6 +1632,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-24T15:05:31+00:00"
         },
         {
@@ -1662,6 +1745,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-14T07:43:07+00:00"
         },
         {

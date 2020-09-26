@@ -1008,7 +1008,6 @@
             ],
             "description": "The Developer Tools panel for WordPress.",
             "homepage": "https://github.com/johnbillion/query-monitor/",
-            "abandoned": "wpackagist-plugin/query-monitor",
             "time": "2019-12-02T22:46:18+00:00"
         },
         {

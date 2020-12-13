@@ -25,16 +25,16 @@ function get_mu_plugins() : array {
 		},
 		array_filter(
 			scandir( __DIR__ ),
-			function ( $directory ) {
-				if ( in_array( $directory, [ '.', '..' ], true ) ) {
+			function ( $plugin ) {
+				if ( in_array( $plugin, [ '.', '..' ], true ) ) {
 					return false;
 				}
 
-				$plugin = __DIR__ . "/{$directory}/";
+				$plugin_dir = __DIR__ . "/{$plugin}/";
 
 				return (
-					is_dir( $plugin )
-					&& is_readable( "{$plugin}/{$directory}.php" )
+					is_dir( $plugin_dir )
+					&& is_readable( "{$plugin}/{$plugin}.php" )
 				);
 			}
 		)

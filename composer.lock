@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6c4c0afb681ed3fa9a73be743f1b780",
+    "content-hash": "e642635d43a73abb61220ec162de8d79",
     "packages": [
         {
             "name": "composer/installers",
@@ -149,17 +149,17 @@
         },
         {
             "name": "jmichaelward/jmw-2018-theme",
-            "version": "0.3.3",
+            "version": "0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/jmw-2018-theme.git",
-                "reference": "d745ffe18323212578d286d396a0d2655ee76696"
+                "reference": "72f0970cd04c23e6d77fabd0bcae7e9620d31f0b"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2018-theme/jmichaelward-jmw-2018-theme-0.3.3-0c408c.tar",
-                "reference": "d745ffe18323212578d286d396a0d2655ee76696",
-                "shasum": "ff41bff1639824110545c258280059d3014fa72b"
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2018-theme/jmichaelward-jmw-2018-theme-0.3.4-ce134c.tar",
+                "reference": "72f0970cd04c23e6d77fabd0bcae7e9620d31f0b",
+                "shasum": "d3d2fded66829bb4b97ae5ab2bf6b64c91f6bf40"
             },
             "type": "wordpress-theme",
             "license": [
@@ -172,7 +172,7 @@
                 }
             ],
             "description": "A 2018 theme for J. Michael Ward.",
-            "time": "2020-04-02T22:21:01+00:00"
+            "time": "2020-12-13T19:27:09+00:00"
         },
         {
             "name": "jmichaelward/jmw-wp-requirements",

@@ -8,17 +8,17 @@
         "johnpbloch/wordpress-core-installer": "^2.0",
         "johnpbloch/wordpress-core": "^5.3",
         "jmichaelward/jmw-2018-theme": "^0.3",
+        "jmichaelward/jmw-wp-requirements": "^1",
         "symfony/dotenv": "^5.0"
     },
     "require-dev": {
-        "johnbillion/query-monitor": "^3.5",
         "jmichaelward/wpcs-modified": "^0.1.0",
         "wp-cli/wp-cli-bundle": "^2.4"
     },
     "repositories": {
-        "wpackagist": {
+        "packages.jmichaelward.com": {
             "type": "composer",
-            "url": "https://wpackagist.org"
+            "url": "https://packages.jmichaelward.com"
         },
         "jmw-2018-theme": {
             "type": "git",

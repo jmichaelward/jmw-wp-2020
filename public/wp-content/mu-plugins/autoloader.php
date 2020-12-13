@@ -34,7 +34,7 @@ function get_mu_plugins() : array {
 
 				return (
 					is_dir( $plugin_dir )
-					&& is_readable( "{$plugin}/{$plugin}.php" )
+					&& is_readable( "{$plugin_dir}/{$plugin}.php" )
 				);
 			}
 		)

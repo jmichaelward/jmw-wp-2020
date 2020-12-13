@@ -5,7 +5,7 @@
  * @package JMichaelWard\JmwWP2020
  */
 
-namespace JMichaelWard\JmwWp2020;
+namespace JMichaelWard\JmwWP2020;
 
 foreach ( get_mu_plugins() as $mu_plugin_file ) {
 	require_once $mu_plugin_file;

@@ -3,7 +3,14 @@
 # one-off package with this project.
 /public/vendor/
 /public/wp/
-/public/wp-content/
+/public/wp-content/mu-plugins/**/*
+/public/wp-content/plugins/**/*
+/public/wp-content/themes/**/*
+/public/wp-content/uploads/**/*
+
+# Don't ignore particular parts of the project we want to keep track of.
+!/public/wp-content/mu-plugins/autoloader.php
+!/public/wp-content/plugins/index.php
 
 # Ignore our config values.
 /config/config.php

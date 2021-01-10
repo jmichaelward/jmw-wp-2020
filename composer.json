@@ -7,8 +7,7 @@
         "composer/installers": "^1.8",
         "johnpbloch/wordpress-core-installer": "^2.0",
         "johnpbloch/wordpress-core": "^5.3",
-        "jmichaelward/jmw-2018-theme": "^0.3",
-        "jmichaelward/jmw-2020-theme": "dev-master",
+        "jmichaelward/jmw-2021-theme": "^0.1",
         "jmichaelward/jmw-site-plugin": "^0.1",
         "symfony/process": "^5.0",
         "jmichaelward/jmw-wp-requirements": "^1",
@@ -23,13 +22,9 @@
             "type": "composer",
             "url": "https://packages.jmichaelward.com"
         },
-        "jmichaelward/jmw-2018-theme": {
+        "jmichaelward/jmw-2021-theme": {
             "type": "git",
-            "url": "https://github.com/jmichaelward/jmw-2018-theme.git"
-        },
-        "jmichaelward/jmw-2020-theme": {
-            "type": "git",
-            "url": "https://github.com/jmichaelward/jmw-2020-theme.git"
+            "url": "https://github.com/jmichaelward/jmw-2021-theme.git"
         },
         "jmichaelward/jmw-site-plugin": {
             "type": "git",

@@ -72,10 +72,6 @@ $processes = [
 		[ 'yarn', 'run', 'build' ],
 		$theme_dir,
 	],
-	'activate_theme' => [
-		[ 'wp', 'theme', 'activate', $theme ],
-		$theme_dir,
-	],
 ];
 
 // Loop through the parameters and run the individual processes with output.

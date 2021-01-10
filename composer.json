@@ -9,7 +9,7 @@
         "johnpbloch/wordpress-core": "^5.3",
         "jmichaelward/jmw-2018-theme": "^0.3",
         "jmichaelward/jmw-2020-theme": "dev-master",
-        "jmichaelward/jmw-site-plugin": "dev-master@dev",
+        "jmichaelward/jmw-site-plugin": "^0.1",
         "symfony/process": "^5.0",
         "jmichaelward/jmw-wp-requirements": "^1",
         "symfony/dotenv": "^5.0"

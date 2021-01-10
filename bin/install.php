@@ -74,7 +74,7 @@ $processes = [
 	],
 	'activate_theme' => [
 		[ 'wp', 'theme', 'activate', $theme ],
-		'./public/vendor/bin',
+		$theme_dir,
 	],
 ];
 

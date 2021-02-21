@@ -149,11 +149,17 @@
         },
         {
             "name": "jmichaelward/jmw-2021-theme",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jmichaelward/jmw-2021-theme.git",
-                "reference": "6663c016deaf3e48d746c91362eebba406b766dd"
+                "url": "https://github.com/jmichaelward/jmw-2020-theme.git",
+                "reference": "1cac27c1fc8de1be98be436e9889b261c67b8af1"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2021-theme/jmichaelward-jmw-2021-theme-0.1.4-60f47f.tar",
+                "reference": "1cac27c1fc8de1be98be436e9889b261c67b8af1",
+                "shasum": "78e3a60ea37fffe8fb0629e96a96b02e9803eb97"
             },
             "require": {
                 "jmichaelward/oops-wp-plus": "^0.1.1"
@@ -178,7 +184,7 @@
                 }
             ],
             "description": "A WordPress theme for jmichaelward.com.",
-            "time": "2021-01-30T22:43:33+00:00"
+            "time": "2021-02-21T00:30:05+00:00"
         },
         {
             "name": "jmichaelward/jmw-site-plugin",

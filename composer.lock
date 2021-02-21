@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4deb1f63709803ef0283b6a09b318fd9",
+    "content-hash": "c6666b9357e0691a8c3d73700f63df94",
     "packages": [
         {
             "name": "composer/installers",
@@ -701,6 +701,24 @@
                 "source": "https://github.com/WebDevStudios/oops-wp/tree/master"
             },
             "time": "2020-01-31T22:26:07+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/cloudflare",
+            "version": "4.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cloudflare/",
+                "reference": "tags/4.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cloudflare/"
         }
     ],
     "packages-dev": [

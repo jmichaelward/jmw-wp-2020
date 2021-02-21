@@ -211,17 +211,17 @@
         },
         {
             "name": "jmichaelward/jmw-wp-requirements",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/jmw-wp-requirements.git",
-                "reference": "28f4cef59a7bf79069531c9eee8cdf88774a3a99"
+                "reference": "cee2df7c7a70e22526d44a9e75e7f21d777fea62"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-wp-requirements/jmichaelward-jmw-wp-requirements-1.1.0-92428b.tar",
-                "reference": "28f4cef59a7bf79069531c9eee8cdf88774a3a99",
-                "shasum": "431163db860a0339ec6debe79272c2211ce42159"
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-wp-requirements/jmichaelward-jmw-wp-requirements-1.1.1-a8c224.tar",
+                "reference": "cee2df7c7a70e22526d44a9e75e7f21d777fea62",
+                "shasum": "6fab1579e20a527162aa94b40a097b7f610d7dc1"
             },
             "type": "wordpress-muplugin",
             "license": [
@@ -234,7 +234,7 @@
                 }
             ],
             "description": "An mu-plugin for jmichaelward.com.",
-            "time": "2021-02-20T23:46:46+00:00"
+            "time": "2021-02-21T23:31:07+00:00"
         },
         {
             "name": "jmichaelward/oops-wp-plus",

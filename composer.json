@@ -3,7 +3,7 @@
 	"description": "A 2020 iteration of my personal site's WordPress install.",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"php": "^7.4",
+		"php": "^7.4 || ^8",
 		"composer/installers": "^1.8",
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"johnpbloch/wordpress-core": "^5.3",
@@ -15,21 +15,12 @@
 		"wpackagist-plugin/cloudflare": "^4.1"
 	},
 	"require-dev": {
-		"jmichaelward/wpcs-modified": "^0.1.0",
-		"wp-cli/wp-cli-bundle": "^2.4"
+		"jmichaelward/wpcs-modified": "^0.1.0"
 	},
 	"repositories": {
 		"packages.jmichaelward.com": {
 			"type": "composer",
 			"url": "https://packages.jmichaelward.com"
-		},
-		"jmichaelward/jmw-2021-theme": {
-			"type": "git",
-			"url": "https://github.com/jmichaelward/jmw-2021-theme.git"
-		},
-		"jmichaelward/jmw-site-plugin": {
-			"type": "git",
-			"url": "https://github.com/jmichaelward/jmw-site-plugin.git"
 		},
 		"wpackagist.org": {
 			"type": "composer",

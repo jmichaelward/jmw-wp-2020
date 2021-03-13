@@ -48,7 +48,8 @@
 	},
 	"scripts": {
 		"reset": [
-			"rm -rf ./public/vendor ./public/wp ./public/wp-content"
+			"rm -rf ./public/vendor ./public/wp ./public/wp-content",
+			"git reset HEAD --hard"
 		],
 		"post-install-cmd": "php ./bin/install.php"
 	}

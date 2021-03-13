@@ -159,14 +159,14 @@
             "version": "0.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jmichaelward/jmw-2020-theme.git",
+                "url": "git@github.com:jmichaelward/jmw-2021-theme.git",
                 "reference": "0a872f6d5c5fc050792944f7028b82f42557c1b4"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2021-theme/jmichaelward-jmw-2021-theme-0.1.7-e8f270.tar",
+                "type": "zip",
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2021-theme/jmichaelward-jmw-2021-theme-0.1.7-e8f270.zip",
                 "reference": "0a872f6d5c5fc050792944f7028b82f42557c1b4",
-                "shasum": "ee0e84848db285d6ad84623b3836886e00d64192"
+                "shasum": "b3cdc85c34b55074f200c5f6d301166b8a36a627"
             },
             "require": {
                 "jmichaelward/oops-wp-plus": "^0.1.1"
@@ -202,10 +202,10 @@
                 "reference": "76465a24ebe4c8b4e55dcc374c60ae265e4aaa3f"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-site-plugin/jmichaelward-jmw-site-plugin-0.1.1-aa9014.tar",
+                "type": "zip",
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-site-plugin/jmichaelward-jmw-site-plugin-0.1.1-aa9014.zip",
                 "reference": "76465a24ebe4c8b4e55dcc374c60ae265e4aaa3f",
-                "shasum": "6f008df848192e1b36da9112600c98f171423982"
+                "shasum": "6f266d61112f7a296d9d2cd5a54a3bf4bf4d3778"
             },
             "require": {
                 "webdevstudios/oops-wp": "^1.0"
@@ -231,10 +231,10 @@
                 "reference": "cee2df7c7a70e22526d44a9e75e7f21d777fea62"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-wp-requirements/jmichaelward-jmw-wp-requirements-1.1.1-a8c224.tar",
+                "type": "zip",
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-wp-requirements/jmichaelward-jmw-wp-requirements-1.1.1-a8c224.zip",
                 "reference": "cee2df7c7a70e22526d44a9e75e7f21d777fea62",
-                "shasum": "6fab1579e20a527162aa94b40a097b7f610d7dc1"
+                "shasum": "b02829fa9b1c243e21b743eb7e5d64c2a6278074"
             },
             "type": "wordpress-muplugin",
             "license": [
@@ -254,14 +254,14 @@
             "version": "0.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jmichaelward/oops-wp-plus.git",
+                "url": "git@github.com:jmichaelward/oops-wp-plus.git",
                 "reference": "abcfb5b198f84d0e7e2b59af48a7ff6e4d94a23b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmichaelward/oops-wp-plus/zipball/abcfb5b198f84d0e7e2b59af48a7ff6e4d94a23b",
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/oops-wp-plus/jmichaelward-oops-wp-plus-0.1.2-611b2e.zip",
                 "reference": "abcfb5b198f84d0e7e2b59af48a7ff6e4d94a23b",
-                "shasum": ""
+                "shasum": "949d670651a7d189734648c0ac6fc88c1c7c6d1f"
             },
             "require": {
                 "webdevstudios/oops-wp": "^1.0"
@@ -272,7 +272,6 @@
                     "JMichaelWard\\OopsWPPlus\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -284,10 +283,6 @@
                 }
             ],
             "description": "A custom extension of the OOPS-WP library.",
-            "support": {
-                "issues": "https://github.com/jmichaelward/oops-wp-plus/issues",
-                "source": "https://github.com/jmichaelward/oops-wp-plus/tree/0.1.2"
-            },
             "time": "2021-02-27T23:52:59+00:00"
         },
         {
@@ -461,7 +456,7 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v5.2.3",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
@@ -511,7 +506,7 @@
                 "environment"
             ],
             "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v5.2.3"
+                "source": "https://github.com/symfony/dotenv/tree/v5.2.4"
             },
             "funding": [
                 {
@@ -614,7 +609,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.2.3",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -656,7 +651,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.2.3"
+                "source": "https://github.com/symfony/process/tree/v5.2.4"
             },
             "funding": [
                 {

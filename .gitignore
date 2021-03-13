@@ -19,3 +19,6 @@
 # Ignore specific files.
 .env
 debug.log
+
+# Ignore wp-cli config
+wp-cli.yml

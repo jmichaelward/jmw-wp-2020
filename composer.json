@@ -46,6 +46,14 @@
 			]
 		}
 	},
+	"autoload": {
+		"psr-4": {
+			"JMichaelWard\\JmwWP2020\\": "bin/"
+		},
+		"files": [
+			"bin/functions.php"
+		]
+	},
 	"scripts": {
 		"reset": [
 			"rm -rf ./public/vendor ./public/wp ./public/wp-content",

@@ -14,7 +14,8 @@
  * ship with built assets in tagged releases.
  */
 
-use Symfony\Component\Dotenv\Dotenv;
+namespace JMichaelWard\JmwWP2020;
+
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 
@@ -41,16 +42,7 @@ foreach ( $configs as $example => $config ) {
 	}
 }
 
-/*
- * Attempt to load the .env configuration. Bail if it can't be found.
- */
-try {
-	$dotenv = new Dotenv();
-	$dotenv->load( "{$root}/config/.env" );
-} catch ( Throwable $e ) {
-	echo "No .env file found in configuration. Could not complete installation.\n";
-	exit( 1 );
-}
+load_environment();
 
 // Get theme values.
 $theme     = $_ENV['CURRENT_THEME'];

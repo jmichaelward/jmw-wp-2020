@@ -13,4 +13,5 @@ The following dependencies must be installed on your machine prior to running th
 
 ## Installation & Setup
 1. Clone this repo: `git clone https://github.com/jmichaelward/jmw-wp-2020.git`
-2. `cd jmw-wp-2020 && composer install`
+2. `cd jmw-wp-2020`
+3. `nvm use && composer install`

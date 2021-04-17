@@ -9,7 +9,7 @@
 /public/wp-content/uploads/**/*
 
 # Don't ignore particular parts of the project we want to keep track of.
-!/public/wp-content/mu-plugins/autoloader.php
+!/public/wp-content/mu-plugins/plugins-loader.php
 !/public/wp-content/plugins/index.php
 
 # Ignore our config values.

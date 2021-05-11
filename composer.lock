@@ -158,17 +158,17 @@
         },
         {
             "name": "jmichaelward/jmw-2021-theme",
-            "version": "0.1.10",
+            "version": "0.1.11",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/jmw-2021-theme.git",
-                "reference": "757846af629a2194a0aa8ceb68feca9d5578f687"
+                "reference": "f72379127614e48c82f50246da7f5af7a1be030c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2021-theme/jmichaelward-jmw-2021-theme-0.1.10-216228.zip",
-                "reference": "757846af629a2194a0aa8ceb68feca9d5578f687",
-                "shasum": "634f016ad2dea8ea337324e1d995c7e309f4a298"
+                "url": "https://packages.jmichaelward.com/dist/jmichaelward/jmw-2021-theme/jmichaelward-jmw-2021-theme-0.1.11-65eecf.zip",
+                "reference": "f72379127614e48c82f50246da7f5af7a1be030c",
+                "shasum": "f6cc7be294416d9cee8c37da0346a3be962eb14d"
             },
             "require": {
                 "jmichaelward/oops-wp-plus": "^0.1.1"
@@ -193,7 +193,7 @@
                 }
             ],
             "description": "A WordPress theme for jmichaelward.com.",
-            "time": "2021-05-01T13:10:38+00:00"
+            "time": "2021-05-11T22:44:52+00:00"
         },
         {
             "name": "jmichaelward/jmw-site-plugin",
@@ -611,16 +611,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.2.4",
+            "version": "v5.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f"
+                "reference": "98cb8eeb72e55d4196dd1e36f1f16e7b3a9a088e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
-                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
+                "url": "https://api.github.com/repos/symfony/process/zipball/98cb8eeb72e55d4196dd1e36f1f16e7b3a9a088e",
+                "reference": "98cb8eeb72e55d4196dd1e36f1f16e7b3a9a088e",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +653,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.2.4"
+                "source": "https://github.com/symfony/process/tree/v5.3.0-BETA1"
             },
             "funding": [
                 {
@@ -669,7 +669,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T10:15:41+00:00"
+            "time": "2021-04-08T10:27:02+00:00"
         },
         {
             "name": "webdevstudios/oops-wp",

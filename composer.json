@@ -11,8 +11,7 @@
 		"jmichaelward/jmw-site-plugin": "^0.1",
 		"symfony/process": "^5.0",
 		"jmichaelward/jmw-wp-requirements": "^1",
-		"symfony/dotenv": "^5.0",
-		"wpackagist-plugin/cloudflare": "^4.1"
+		"symfony/dotenv": "^5.0"
 	},
 	"require-dev": {
 		"jmichaelward/wpcs-modified": "^0.1.0"
